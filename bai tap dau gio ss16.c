@@ -19,17 +19,19 @@ main()
 		
 		tb = xeploai(a_s_m, lythuyet, thuchanh);
 		
-		if(tb == 0){
-			printf("\nBan truot mon!");
-		}
-		else if(tb == 1){
-			printf("\nBan xep loai trung binh");
-		}
-		else if(tb == 2){
-			printf("\nBan xep loai kha");
-	    }
-	    else if(tb == 3){
-	    	printf("\nBan xep loai gioi");
+		switch(tb){
+			case 0:
+				printf("\nBan truot mon!");
+				break;
+			case 1:
+			    printf("\nBan xep loai trung binh");
+				break;
+			case 2:
+			    printf("\nBan xep loai kha");
+				break;
+			case 3:
+			    printf("\nBan xep loai gioi");
+				break;			
 		}
 		
 		printf("\nBan co muon tra cuu xep loai tiep khong?");
